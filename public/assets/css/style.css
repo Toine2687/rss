@@ -5,8 +5,9 @@
 	--clearColor: #e6efff;
 	--accent-color: #efd283;
 }
+
 .darkMode {
-	--main-bg-color: #293045;
+	--main-bg-color: #1c202f;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
 	box-sizing: border-box;
 	background-color: var(--main-bg-color);
 }
+
 header {
 	height: 1vh;
 	background-color: var(--headFootColor);
@@ -25,10 +27,12 @@ header {
 	font-family: 'Raleway', sans-serif;
 	border-bottom: 2px solid black;
 }
+
 #headerCat,
 #headerSettings {
 	width: 40vw;
 }
+
 .headerButtonCat {
 	font-size: 1em;
 	border: none;
@@ -40,24 +44,33 @@ i:hover {
 	/* border-bottom: 1px solid var(--accent-color); */
 	transition: 0.5s ease;
 }
+
 #headerLogo {
 	display: flex;
 	justify-self: center;
 	align-self: center;
 	width: 20vw;
 }
+
 #headerLogo img {
 	width: 18vw;
 	margin-bottom: -3vh;
 }
+
 #headerSettings {
 	display: flex;
 	justify-content: end;
 }
+
 header i {
 	margin-right: 1vw;
 	font-size: 1.4em;
 }
+header i:hover {
+	transform: rotate(180deg);
+	transition: 0.5s ease;
+}
+
 /* ================ FOOTER ================= */
 footer {
 	height: 1vh;
@@ -74,7 +87,6 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	text-decoration: ;
 }
 #rightFooter a {
 	text-decoration: none;
