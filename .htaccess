@@ -1,0 +1,10 @@
+# On suit les liens symboliques 
+Options +FollowSymlinks 
+# Activation du mod rewrite d'Apache 
+RewriteEngine On
+#index.php vers accueil.html
+RewriteRule ^accueil\.html$ /index.php 
+RewriteRule ^parametre\.html$ /parametre.php 
+RewriteRule ^sujet1\.html$ /pages.php?sujet=1 
+RewriteRule ^sujet2\.html$ /pages.php?sujet=2 
+RewriteRule ^sujet3\.html$ /pages.php?sujet=3 [L]
