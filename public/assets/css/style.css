@@ -81,6 +81,7 @@ footer {
 	padding: 3vw;
 	font-family: 'Raleway', sans-serif;
 	border-top: 2px solid black;
+	margin-bottom: 0;
 }
 #rightFooter {
 	width: 30vw;
@@ -95,4 +96,24 @@ footer {
 #rightFooter a:hover {
 	color: var(--accent-color);
 	transition: 0.5s ease;
+}
+/* ================= 404 ===================== */
+#errorContainer {
+	width: 100vw;
+	/* height: 70vh; */
+	background-color: var(--main-bg-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 5vh 0;
+}
+#errorContainer img {
+	height: 80%;
+}
+#errorContainer h1,
+#errorContainer h2 {
+	background-color: rgba(255, 255, 255, 0.06);
+	padding: 1vh;
+	border-radius: 20px;
 }
