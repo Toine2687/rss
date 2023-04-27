@@ -2,5 +2,5 @@
     <input type="checkbox" name="userTopic[]" value="<?=$value?>" id="<?=$key?>">
     <label class="btn btn-outline-primary"  for="<?=$key?>"><?=$key?></label>
 <?php } ?>
-<P><?= $error['topics'] ?? ""?></P>
+<P id="checkboxInfo"><?= $error['topics'] ?? ""?></P>
 
