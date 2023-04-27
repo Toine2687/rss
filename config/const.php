@@ -1,7 +1,7 @@
 <?php
 
 define ('TOPICS', [
-'Actualités' =>  'https://www.01net.com/actualites/feed/',
+'Actualites' =>  'https://www.01net.com/actualites/feed/',
 'Produits' => 'https://www.01net.com/actualites/produits/feed/',
 'Logiciels' => 'https://www.01net.com/actualites/applis-logiciels/feed/',
 'Jeux' => 'https://www.01net.com/actualites/jeux/feed/',
