@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/../config/const.php';
+require_once __DIR__ . '/../config/init.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $userTopic = filter_input(INPUT_POST, 'userTopic', FILTER_SANITIZE_URL, FILTER_REQUIRE_ARRAY);
