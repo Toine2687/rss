@@ -1,7 +1,7 @@
 /* font-family: 'Raleway', sans-serif; */
 :root {
 	--main-bg-color: #d3d6de;
-	--headFootColor: #7d87ab;
+	--headFootColor: #727da3;
 	--clearColor: #e6efff;
 	--accent-color: #efd283;
 	font-family: 'Raleway', sans-serif;
@@ -78,15 +78,16 @@ i:hover {
 
 #headerLogo img {
 	width: 18vw;
-	margin-bottom: -3vh;
+	margin-bottom: -5vh;
 }
 
 #headerSettings {
 	display: flex;
 	justify-content: end;
 }
-
-header i {
+/* ============== Buttons ============= */
+header i,
+header a i {
 	margin-right: 1vw;
 	font-size: 1.6em;
 }
@@ -96,6 +97,7 @@ header a i:hover {
 	/* transform: rotate(180deg); */
 	color: black;
 	transition: 0.5s ease;
+	transform: scale(1.2);
 }
 #houseBtn {
 	color: black;
@@ -103,6 +105,11 @@ header a i:hover {
 header #darkBtn {
 	font-size: 2.1em;
 }
+#settingsBtn:hover,
+#darkBtn:hover {
+	transform: rotate(180deg);
+}
+
 /* ================ FOOTER ================= */
 footer {
 	height: 1vh;
@@ -159,7 +166,8 @@ footer {
 	height: 90vh;
 }
 #settingsContainer img {
-	width: 35vw;
+	width: 30vw;
+	margin-bottom: 0;
 }
 #checkboxesDiv {
 	margin: 0;
@@ -171,7 +179,7 @@ footer {
 	list-style: none;
 }
 #settingsContainer img {
-	margin-bottom: 5vh;
+	margin-bottom: 2vh;
 }
 #settingsContainer label,
 button,
