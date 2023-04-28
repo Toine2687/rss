@@ -23,7 +23,7 @@ require_once __DIR__ . '/../config/cookies.php'
         <div id="headerCat">
             <?php
             foreach ($displayTopics as $key => $value) { ?>
-                <a href="/controllers/pagesCtrl.php?display=<?=$key?>" class="headerButtonCat" id="headerButtonCat1"><?= $key ?></a>
+                <a href="/controllers/pagesCtrl.php?display=<?= $key ?>" class="headerButtonCat" id="headerButtonCat1"><?= $key ?></a>
             <?php } ?>
 
 
@@ -32,8 +32,8 @@ require_once __DIR__ . '/../config/cookies.php'
             <img src="../public/assets/img/logo.svg" alt="">
         </div>
         <div id="headerSettings">
-            <!-- 2 boutons -->
-            <i id="settingsBtn" class="fa-solid fa-gear"></i>
+            <a href="../controllers/tripleCtrl.php"><i id="houseBtn" class="fa-solid fa-house"></i></a>
+            <a href="../controllers/parametersCtrl.php"> <i id="settingsBtn" class="fa-solid fa-gear"></i></a>
             <i id="darkBtn" class="fa-solid fa-circle-half-stroke"></i>
         </div>
     </header>

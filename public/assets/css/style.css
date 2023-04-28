@@ -11,8 +11,10 @@
 	--main-bg-color: #1c202f;
 	color: white;
 }
-.darkMode h2, .darkMode a{
-	color: white!important;
+.darkMode h2,
+.darkMode a,
+.darkMode i {
+	color: white !important;
 }
 #dark {
 	margin-top: 1vh;
@@ -23,7 +25,7 @@
 	position: absolute;
 	top: 2vh;
 	right: 3vw;
-	font-size: 1.4em;
+	font-size: 1.6em;
 }
 body {
 	margin: 0;
@@ -35,7 +37,7 @@ body {
 header a {
 	text-decoration: none;
 	font-weight: 500;
-	font-size: 1.4em!important;
+	font-size: 1.4em !important;
 	color: black;
 	margin: 0 1vw;
 }
@@ -62,7 +64,7 @@ header {
 }
 .headerButtonCat:hover,
 i:hover {
-	color: var(--accent-color);
+	color: #d39b01;
 	/* border-bottom: 1px solid var(--accent-color); */
 	transition: 0.5s ease;
 }
@@ -86,14 +88,21 @@ i:hover {
 
 header i {
 	margin-right: 1vw;
-	font-size: 1.4em;
+	font-size: 1.6em;
 }
 header i:hover,
-i:hover {
-	transform: rotate(180deg);
+i:hover,
+header a i:hover {
+	/* transform: rotate(180deg); */
+	color: black;
 	transition: 0.5s ease;
 }
-
+#houseBtn {
+	color: black;
+}
+header #darkBtn {
+	font-size: 2.1em;
+}
 /* ================ FOOTER ================= */
 footer {
 	height: 1vh;
@@ -204,23 +213,25 @@ select {
 	height: auto;
 	border-radius: 1vw;
 }
-
 .thirdContainer a {
 	text-decoration: none;
 	color: black;
 	font-family: 'Raleway', sans-serif;
+	display: flex;
+	height: 15%;
+	text-overflow: ellipsis;
 }
 .thirdContainer .article {
 	padding: 1em;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 	border-radius: 1vw;
-	height: 75vh;
+	height: 80vh;
 	margin: 2vh 0;
 	/* background-color: red; */
 }
 .thirdContainer .article:hover {
 	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
-	transition: .5s;
+	transition: 0.5s;
 }
 
 .thirdContainer .link {
@@ -250,7 +261,23 @@ select {
 	color: black;
 	font-family: 'Raleway', sans-serif;
 }
-
-
-
-text ellipsis
+/* =================== mesures communes ==================== */
+.article {
+	height: 75vh;
+}
+.article h2 {
+	height: 15vh;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+}
+.date {
+	height: 3%;
+}
+.article img {
+	height: 35%;
+}
+.article {
+	overflow: hidden;
+}
