@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <!-- <div class="thirdContainer"> -->
-    <div class="fullWidthContainer">
+    <div class="thirdContainer">
+        <!-- <div class="fullWidthContainer"> -->
         <?php
         $testxml = simplexml_load_file('https://www.01net.com/actualites/feed/');
         foreach ($testxml->channel->item as $item) {
