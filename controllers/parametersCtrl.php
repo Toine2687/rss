@@ -17,6 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (in_array($articleNb, ARTICLE_NB)) {
         setcookie('articleNb', $articleNb, time() + 31000000, '/');
     }
+    header('location: /controllers/tripleCtrl.php');
+    die;
 }
 
 include __DIR__ . '/../views/settings.php';
