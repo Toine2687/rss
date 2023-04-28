@@ -6,6 +6,7 @@ require_once __DIR__ . '/../config/cookies.php';
     foreach ($displayTopics as $key => $value) {
     ?>
         <div class="thirdContainer">
+            <p class="containerName"><?= $key  ?></p>
         <?php
         $testxml = simplexml_load_file("$value");
         foreach ($testxml->channel->item as $item) {

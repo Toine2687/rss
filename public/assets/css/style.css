@@ -206,6 +206,11 @@ select {
 	transition: 0.5s;
 }
 /* ================== third View ================== */
+.containerName {
+	text-align: center;
+	font-size: 1.8em;
+	margin-bottom: 0;
+}
 .tripleContainer {
 	display: flex;
 	flex-wrap: wrap;
