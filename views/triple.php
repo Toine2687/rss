@@ -1,6 +1,13 @@
+<?php 
+require_once __DIR__ . '/../config/cookies.php'
+?>
+
 <div class="thirdContainer">
     <?php
-    $testxml = simplexml_load_file('https://www.01net.com/actualites/feed/');
+
+foreach ($displayTopics as $key => $value) {
+
+    $testxml = simplexml_load_file("$value");
     foreach ($testxml->channel->item as $item) {
         $newDate = new DateTime($item->pubDate);
         $fmtDate = new IntlDateFormatter('fr_FR');
@@ -12,5 +19,5 @@
                     <p class="description">' . $item->description . '</p>
                     <p class="link"><i><a href="' . $item->link . '">Lire la suite...</a></i></p>
                 </div>';
-    } ?>
+    }} ?>
 </div>
