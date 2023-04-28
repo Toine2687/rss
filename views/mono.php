@@ -1,6 +1,8 @@
+
+
 <div class="fullWidthContainer">
     <?php
-    $testxml = simplexml_load_file('https://www.01net.com/actualites/feed/');
+    $testxml = simplexml_load_file(TOPICS[$display]);
     foreach ($testxml->channel->item as $item) {
         $newDate = new DateTime($item->pubDate);
         $fmtDate = new IntlDateFormatter('fr_FR');
