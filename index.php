@@ -1,2 +1,3 @@
 <?php 
-echo 'Coucou';
+    header('location: /controllers/tripleCtrl.php');
+

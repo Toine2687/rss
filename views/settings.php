@@ -17,7 +17,7 @@
 
         <div id="settingsContainer">
             <img src="../public/assets/img/logo.svg" alt="logo origami">
-            <form method="post" action="../controllers/tripleCtrl.php">
+            <form method="post" >
                 <div id="checkboxesDiv">
                     <h2>Selectionnez 3 sujets</h2>
                     <?php include __DIR__ . '/../views/checkbox.php' ?>
