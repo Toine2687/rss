@@ -1,3 +1,9 @@
+<?php
+require_once __DIR__ . '/../config/cookies.php'
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -15,9 +21,12 @@
 <body>
     <header>
         <div id="headerCat">
-            <button class="headerButtonCat" id="headerButtonCat1">Categorie 1</button>
-            <button class="headerButtonCat" id="headerButtonCat2">Categorie 2</button>
-            <button class="headerButtonCat" id="headerButtonCat3">Categorie 3</button>
+            <?php
+            foreach ($displatTopics as $key => $value) { ?>
+                <a href="/controllers/mono.php?display=<?=$key?>" class="headerButtonCat" id="headerButtonCat1"><?= $key ?></a>
+            <?php } ?>
+
+
         </div>
         <div id="headerLogo">
             <img src="../public/assets/img/logo.svg" alt="">
