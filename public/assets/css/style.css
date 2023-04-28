@@ -4,12 +4,24 @@
 	--headFootColor: #7d87ab;
 	--clearColor: #e6efff;
 	--accent-color: #efd283;
+	font-family: 'Raleway', sans-serif;
 }
 
 .darkMode {
 	--main-bg-color: #1c202f;
+	color: white;
 }
-
+#dark {
+	margin-top: 1vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2vw;
+	position: absolute;
+	top: 2vh;
+	right: 3vw;
+	font-size: 1.4em;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -66,7 +78,8 @@ header i {
 	margin-right: 1vw;
 	font-size: 1.4em;
 }
-header i:hover {
+header i:hover,
+i:hover {
 	transform: rotate(180deg);
 	transition: 0.5s ease;
 }
@@ -130,6 +143,7 @@ footer {
 	width: 35vw;
 }
 #checkboxesDiv {
+	margin: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

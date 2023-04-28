@@ -26,6 +26,9 @@
                 <label for="articleNb">Combien d'articles afficher ?</label>
                 <?php include __DIR__ . '/../views/select.php' ?>
                 <!-- INSERER DARK MODE -->
+                <div id="dark">
+                    <i id="darkBtn" class="fa-solid fa-circle-half-stroke"></i>
+                </div>
                 <div id="btnDiv">
                     <button id="settingsBtn" type="submit">Valider</button>
                 </div>
