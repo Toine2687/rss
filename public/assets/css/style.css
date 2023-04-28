@@ -294,3 +294,60 @@ select {
 .article {
 	overflow: hidden;
 }
+@media only screen and (max-width: 1200px) {
+	header {
+		height: 5vh;
+	}
+	.thirdContainer .article {
+		height: 60vh;
+	}
+	.thirdContainer {
+		width: 40%;
+	}
+	.tripleContainer {
+		justify-content: center;
+	}
+}
+@media only screen and (max-width: 600px) {
+	header,
+	footer {
+		width: 100vw;
+		margin: 0;
+		justify-content: center;
+	}
+	header,
+	footer {
+		height: 8vh;
+	}
+	#rightFooter {
+		width: 100vw;
+	}
+	header img {
+		width: 20vw !important;
+	}
+	#headerCat a {
+		font-size: 1em !important;
+	}
+	.thirdContainer .article {
+		height: auto;
+	}
+	.thirdContainer {
+		width: 90%;
+		margin: auto;
+	}
+	.tripleContainer {
+		justify-content: center;
+	}
+	.fullWidthContainer .article {
+		width: 100%;
+		height: auto;
+	}
+	.fullWidthContainer {
+		justify-content: center;
+		width: 90%;
+		margin: auto;
+	}
+	.fullWidthContainer .article h2 {
+		height: auto;
+	}
+}
