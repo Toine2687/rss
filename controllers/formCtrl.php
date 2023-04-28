@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $articleNb = filter_input(INPUT_POST, 'articleNb', FILTER_SANITIZE_NUMBER_INT) ?? 6;
 
     if (in_array($articleNb, ARTICLE_NB)) {
-        setcookie('articleNb', $articleNb, time() + 31000000);
+        setcookie('articleNb', $articleNb, time() + 31000000, '/');
     }
 }
 include __DIR__ . '/../views/header.php';
