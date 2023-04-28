@@ -15,4 +15,4 @@ RewriteRule ^sujet3\.html$ /pages.php?sujet=3
 # A CORRIGER QUAND LES PAGES SERONT FAITES
 
 #Redirection 404
-ErrorDocument 404 /controllers/404.php
+ErrorDocument 404 /controllers/404Ctrl.php
