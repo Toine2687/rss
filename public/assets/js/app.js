@@ -22,5 +22,3 @@ checkboxArray.forEach((checkbox) => {
 		}
 	})
 })
-const doc = document.querySelector('.article')
-console.log(doc)
