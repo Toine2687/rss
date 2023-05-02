@@ -4,12 +4,9 @@ Options +FollowSymlinks
 # Activation du mod rewrite d'Apache 
 RewriteEngine On
 
-#index.php vers accueil.html
 RewriteRule  ^accueil$ /controllers/tripleCtrl.php  [L]
 RewriteRule ^parametres$ /controllers/parametersCtrl.php [L]
-
-# A CORRIGER QUAND LES PAGES SERONT FAITES
-RewriteRule ^([A-Z]{1}[a-z]+)\.php$ controllers/pagesCtrl.php?display=$1 [L]
+RewriteRule ^([A-Z]{1}[a-z]+)$ controllers/pagesCtrl.php?display=$1 [L]
 
 #Redirection 404
 ErrorDocument 404 /controllers/404Ctrl.php

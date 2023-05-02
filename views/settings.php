@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="../public/assets/css/style.css">
 </head>
 
-<body class="<?= $darkMo ?? ""?>">
+<body class="<?= $darkMo ?? "" ?>">
     <main>
 
         <div id="settingsContainer">
             <img src="../public/assets/img/logo.svg" alt="logo origami">
-            <form method="post" >
+            <form method="post">
                 <div id="checkboxesDiv">
                     <h2>Selectionnez 3 sujets</h2>
                     <?php include __DIR__ . '/../views/checkbox.php' ?>
@@ -26,7 +26,7 @@
                 <label for="articleNb">Combien d'articles afficher ?</label>
                 <?php include __DIR__ . '/../views/select.php' ?>
                 <div id="dark">
-                    <a href="../controllers/tripleCtrl.php"><i id="houseBtn" class="fa-solid fa-house"></i></a>
+                    <a href="../accueil"><i id="houseBtn" class="fa-solid fa-house"></i></a>
                     <i id="darkBtn" class="fa-solid fa-circle-half-stroke"></i>
                 </div>
                 <div id="btnDiv">

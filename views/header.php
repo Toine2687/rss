@@ -19,14 +19,15 @@ require_once __DIR__ . '/../config/cookies.php'
 </head>
 
 
-<body class="<?= $darkMo ?? ""?>">
+<body class="<?= $darkMo ?? "" ?>">
     <header>
         <div id="headerCat">
             <?php
-            if (!empty($_COOKIE['topics']) && $_COOKIE['articleNb']){
-            foreach ($displayTopics as $key => $value) { ?>
-                <a href="/controllers/pagesCtrl.php?display=<?= $key ?>" class="headerButtonCat" id="headerButtonCat1"><?= $key ?></a>
-            <?php } }?>
+            if (!empty($_COOKIE['topics']) && $_COOKIE['articleNb']) {
+                foreach ($displayTopics as $key => $value) { ?>
+                    <a href="/../<?= $key ?>" class="headerButtonCat" id="headerButtonCat1"><?= $key ?></a>
+            <?php }
+            } ?>
 
 
         </div>
@@ -34,8 +35,8 @@ require_once __DIR__ . '/../config/cookies.php'
             <img src="../public/assets/img/logo.svg" alt="">
         </div>
         <div id="headerSettings">
-            <a href="../controllers/tripleCtrl.php"><i id="houseBtn" class="fa-solid fa-house"></i></a>
-            <a href="../controllers/parametersCtrl.php"> <i id="settingsBtn" class="fa-solid fa-gear"></i></a>
+            <a href="../accueil"><i id="houseBtn" class="fa-solid fa-house"></i></a>
+            <a href="../parametres"> <i id="settingsBtn" class="fa-solid fa-gear"></i></a>
             <i id="darkBtn" class="fa-solid fa-circle-half-stroke"></i>
         </div>
     </header>
