@@ -5,7 +5,7 @@ require_once __DIR__ . '/../config/init.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $userTopic = filter_input(INPUT_POST, 'userTopic', FILTER_SANITIZE_URL, FILTER_REQUIRE_ARRAY);
 
-    if (empty($userTopic) && count($userTopic) != 3) {
+    if (empty($userTopic) || count($userTopic) != 3) {
         $error['topics'] = 'Veuillez selectionner 3 sujets svp';
     } else {
         $userTopic = array_intersect(TOPICS, $userTopic);
