@@ -6,7 +6,7 @@ RewriteEngine On
 
 #index.php vers accueil.html
 RewriteRule ^accueil\.html$ /controllers/tripleCtrl.php 
-RewriteRule ^parametres\.html$ /controllers/parametersCtrl.php 
+RewriteRule ^parametres\.html$ /controllers/parametersCtrl.php
 
 # A CORRIGER QUAND LES PAGES SERONT FAITES
 RewriteRule ^sujet1\.html$ /pages.php?sujet=1 
