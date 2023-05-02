@@ -105,7 +105,6 @@ header a i:hover {
 header #darkBtn {
 	font-size: 2.1em;
 }
-#settingsBtn:hover,
 #darkBtn:hover {
 	transform: rotate(180deg);
 }
