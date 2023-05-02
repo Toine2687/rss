@@ -18,7 +18,8 @@ require_once __DIR__ . '/../config/cookies.php'
     <link rel="stylesheet" href="../public/assets/css/style.css">
 </head>
 
-<body>
+
+<body class="<?= $darkMo ?? ""?>">
     <header>
         <div id="headerCat">
             <?php

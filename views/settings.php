@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../public/assets/css/style.css">
 </head>
 
-<body>
+<body class="<?= $darkMo ?? ""?>">
     <main>
 
         <div id="settingsContainer">

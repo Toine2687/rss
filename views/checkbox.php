@@ -6,7 +6,16 @@
         <li>
             <div class="checkbox">
 
-                <input type="checkbox" name="userTopic[]" value="<?= $value ?>" id="<?= $key ?>">
+                <?php
+                if (!empty($displayTopics)){
+                if (in_array($value, $displayTopics)) {
+                    $isChecked = "checked=checked";
+                }else {
+                    $isChecked = "";
+                }}
+                ?>
+
+                <input type="checkbox" name="userTopic[]" value="<?= $value ?>" id="<?= $key ?>" <?= $isChecked ?? ""?>>
                 <label for="<?= $key ?>"><?= $key ?></label>
             </div>
         </li>
