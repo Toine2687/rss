@@ -297,13 +297,16 @@ select {
 	header {
 		height: 5vh;
 	}
-	.thirdContainer .article {
+	.thirdContainer .article,
+	.fullWidthContainer .article {
 		height: 60vh;
 	}
-	.thirdContainer {
-		width: 40%;
+	.thirdContainer,
+	.fullWidthContainer .article {
+		width: 45%;
 	}
-	.tripleContainer {
+	.tripleContainer,
+	.fullWidthContainer {
 		justify-content: center;
 	}
 }
