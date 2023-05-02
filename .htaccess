@@ -5,14 +5,11 @@ Options +FollowSymlinks
 RewriteEngine On
 
 #index.php vers accueil.html
-RewriteRule ^accueil\.html$ /controllers/tripleCtrl.php 
-RewriteRule ^parametres\.html$ /controllers/parametersCtrl.php
+RewriteRule  ^accueil$ /controllers/tripleCtrl.php  [L]
+RewriteRule ^parametres$ /controllers/parametersCtrl.php [L]
 
 # A CORRIGER QUAND LES PAGES SERONT FAITES
-RewriteRule ^sujet1\.html$ /pages.php?sujet=1 
-RewriteRule ^sujet2\.html$ /pages.php?sujet=2 
-RewriteRule ^sujet3\.html$ /pages.php?sujet=3
-# A CORRIGER QUAND LES PAGES SERONT FAITES
+RewriteRule ^([A-Z]{1}[a-z]+)\.php$ controllers/pagesCtrl.php?display=$1 [L]
 
 #Redirection 404
 ErrorDocument 404 /controllers/404Ctrl.php
