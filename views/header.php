@@ -23,7 +23,7 @@ require_once __DIR__ . '/../config/cookies.php'
     <header>
         <div id="headerCat">
             <?php
-            if (!empty($_COOKIE)){
+            if (!empty($_COOKIE['topics']) && $_COOKIE['articleNb']){
             foreach ($displayTopics as $key => $value) { ?>
                 <a href="/controllers/pagesCtrl.php?display=<?= $key ?>" class="headerButtonCat" id="headerButtonCat1"><?= $key ?></a>
             <?php } }?>

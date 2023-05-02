@@ -5,7 +5,7 @@ require_once __DIR__ . '/../config/init.php';
 
 
 
-if (empty($_COOKIE)) {
+if (empty($_COOKIE['topics']) && empty($_COOKIE['articleNb'])) {
     header('location: /controllers/parametersCtrl.php');
 }
 

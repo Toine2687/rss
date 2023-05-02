@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../config/const.php';
 
-if (!empty($_COOKIE['topics']) && $_COOKIE['articleNb']) {
+if (!empty($_COOKIE['topics']) && !empty($_COOKIE['articleNb'])) {
 
     $displayTopics = (array)json_decode($_COOKIE['topics']);
 
