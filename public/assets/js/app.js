@@ -18,19 +18,19 @@ function getCookie(name) {
     // Return null if not found
     return null;
 }
-window.addEventListener('load', ()=>{
-	if (getCookie(mode)=="dark"){
-		document.body.classList.toggle('darkMode')
-}})
+// window.addEventListener('load', ()=>{
+// 	if (getCookie(mode)=="dark"){
+// 		document.body.classList.toggle('darkMode')
+// }})
 const darkBtn = document.getElementById('darkBtn')
 darkBtn.addEventListener('click', () => {
-	if (getCookie(mode)=="dark"){
+	if (getCookie(mode)=="darkMode"){
 		document.cookie= 'mode=white ; path=/; domain=rss.localhost; max-age=31000000'
 		document.body.classList.toggle('darkMode')
 
 	} else {
 	document.body.classList.toggle('darkMode')
-	document.cookie= 'mode=dark ; path=/; domain=rss.localhost; max-age=31000000'
+	document.cookie= 'mode=darkMode ; path=/; domain=rss.localhost; max-age=31000000'
 }})
 
 
